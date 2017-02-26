@@ -55,6 +55,11 @@ broadcastclient
 server <%= server %><% if @iburst_enable == true -%> iburst<% end %><% if @preferred_servers.include?(server) -%> prefer<% end %><% if @minpoll -%> minpoll <%= @minpoll %><% end %><% if @maxpoll -%> maxpoll <%= @maxpoll %><% end %>
 <% end -%>
 
+<% [@pool].flatten.each do |pool_server| -%>
+pool <%= pool_server %>
+<% end -%>
+
+
 <% if @udlc -%>
 # Undisciplined Local Clock. This is a fake driver intended for backup
 # and when no outside source of synchronized time is available.

@@ -11,6 +11,7 @@ class ntp::params {
   $keys_trusted      = []
   $logfile           = undef
   $minpoll           = undef
+  $pool              = []
   $leapfile          = undef
   $package_ensure    = 'present'
   $peers             = []

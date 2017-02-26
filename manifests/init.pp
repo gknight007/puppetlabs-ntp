@@ -27,6 +27,7 @@ class ntp (
   $package_name      = $ntp::params::package_name,
   $panic             = $ntp::params::panic,
   $peers             = $ntp::params::peers,
+  $pool              = $ntp::params::pool,
   $preferred_servers = $ntp::params::preferred_servers,
   $restrict          = $ntp::params::restrict,
   $interfaces        = $ntp::params::interfaces,
